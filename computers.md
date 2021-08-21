@@ -16,7 +16,7 @@ Various machines around the house or lab.
 | Lenovo IdeaPad 3       | 4 | 2.1 | AMD Ryzen 5 3500U |
 | Lenovo Y710C           |   |     |                   |
 | spitfire               | 64| 2.5 | AMD Opteron 6380  |
-| RPi model 4B           | 4 | 
+| RPi model 4B           | 4 | 1.5 | ARMv7 rev 3       |
 | RPi model 3B           | 4 | 1.2 | ARMv7 rev 4       |
 | RPi model B revision 2 | 2 | 
 
@@ -46,7 +46,7 @@ a Raspberry Pi 3B. There are 4 components designed to test different things.
 | Mini 2020    |
 | Mini 2020 VM |
 | RPi B2       |
-| RPi 3B       |  1.0| 1.0 | 1.0 | 1.0 | 1.0 |
-| RPi 4B       |
+| RPi 3B       |  1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| RPi 4B       |  2.8 | 1.3 | 2.8 | 3.7 | 2.7 |
 | spitfire     |
 
