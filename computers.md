@@ -12,6 +12,7 @@ Various machines around the house or lab.
 | Apple Mac Mini 2012    | 2 | 2.5 | Intel i5-3210M    |
 | Apple MacBook Air 2017 | 2 | 1.8 | Intel i5-5350U    |
 | Apple MacBook Air 2020 | 8 |     | Apple M1          |
+| Lenovo Chromebook      | 4 |     | ARM Cortex A53    |
 | Lenovo IdeaPad 3       | 4 | 2.1 | AMD Ryzen 5 3500U |
 | Lenovo Y710C           | 4 | 2.7 | Intel i5-6400     |
 | spitfire               | 64| 2.5 | AMD Opteron 6380  |
@@ -40,6 +41,7 @@ Higher numbers is better.
 
 | Machine         | SEQ  | I/O  | MER  | CMP  | Ave  | Notes
 |:----------------|:----:|:----:|:----:|:----:|:----:|:------------
+| Chromebook      |  2.7 |  1.9 |  3.8 |  4.5 |  3.2 |
 | I3 Cygwin       | 10.0 |  0.2 |  6.4 |  6.4 |  5.7 |
 | I3 VM Deb64     | 13.0 |  7.0 |  9.1 |  8.8 |  9.5 |
 | I3 VM Ubuntu64  | 17.6 |  8.0 | 11.3 | 14.1 | 12.7 |
