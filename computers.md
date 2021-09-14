@@ -12,7 +12,7 @@ Various machines around the house or lab.
 | Apple Mac Mini 2012    | 2 | 2.5 | Intel i5-3210M    |
 | Apple MacBook Air 2017 | 2 | 1.8 | Intel i5-5350U    |
 | Apple MacBook Air 2020 | 8 |     | Apple M1          |
-| Lenovo Chromebook      | 4 |     | ARM Cortex A53    |
+| Lenovo Chromebook      | 4 | 1.7 | MT8173C           |
 | Lenovo IdeaPad 3       | 4 | 2.1 | AMD Ryzen 5 3500U |
 | Lenovo Y710C           | 4 | 2.7 | Intel i5-6400     |
 | spitfire               | 64| 2.5 | AMD Opteron 6380  |
