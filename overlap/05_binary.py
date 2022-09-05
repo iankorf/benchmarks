@@ -1,21 +1,6 @@
 import sys
 import json
 
-def read_features(file):
-	features = []
-	with open(file) as fp:
-		for line in fp.readlines():
-			chrom, beg, end = line.split()
-			features.append( (chrom, int(beg), int(end)) )
-
-	return sorted(features, key=lambda x:(x[0], x[1], x[2]))
-
-def overlaps(f1, f2):
-	c1, b1, e1 = f1
-	c2, b2, e2 = f2
-	if c1 == c2 and b2 <= e1 and e2 >= b1: return True
-	return False
-
 def cmp_features(f1, f2):
 	c1, b1, e1 = f1
 	c2, b2, e2 = f2
@@ -62,13 +47,6 @@ def matching_features(feats, f, max_fsize):
 
 	return found
 
-#def linear(feats, f):
-#	found = []
-#	for i in range(len(feats)):
-#		if overlaps(feats[i], f):
-#			found.append(i)
-#	return found
-
 def find_one_overlap_binary(feats, f1):
 	hi = len(feats) -1
 	lo = 0
@@ -92,24 +70,22 @@ def find_one_overlap_binary(feats, f1):
 
 		last = (lo, idx, hi)
 
-	#missed = linear(feats, f1)
-	#if len(missed) > 0:
-	#	sys.stderr.write(f'missed feature: {f1}')
-
 	return None
 
-def output(f1, f2):
-	c1, b1, e1 = f1
-	c2, b2, e2 = f2
-	print(f'{c1}:{b1}-{e1} {c2}:{b2}-{e2}')
 
-feats = read_features(sys.argv[2])
+feats = []
+with open(sys.argv[2]) as fp:
+	for line in fp.readlines():
+		chrom, beg, end = line.split()
+		feats.append( (chrom, int(beg), int(end)) )
+feats = sorted(feats, key=lambda x:(x[0], x[1], x[2]))
+
 max_fsize = 1000 # ugh
-
 
 with open(sys.argv[1]) as fp:
 	for line in fp.readlines():
 		chrom, beg, end = line.split()
 		f1 = (chrom, int(beg), int(end))
 		for f2 in matching_features(feats, f1, max_fsize):
-			output(f1, f2)
+			c2, b2, e2 = f2
+			print(f'{chrom}:{beg}-{end} {c2}:{b2}-{e2}')

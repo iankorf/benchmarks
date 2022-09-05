@@ -1,14 +1,10 @@
 import sys
 
-def read_features(file):
-	features = []
-	with open(file) as fp:
-		for line in fp.readlines():
-			chrom, beg, end = line.split()
-			features.append( (chrom, int(beg), int(end)) )
-	return features
-
-f2s = read_features(sys.argv[2])
+f2s = []
+with open(sys.argv[2]) as fp:
+	for line in fp.readlines():
+		chrom, beg, end = line.split()
+		f2s.append( (chrom, int(beg), int(end)) )
 
 with open(sys.argv[1]) as fp:
 	for line in fp.readlines():

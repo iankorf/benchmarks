@@ -40,7 +40,6 @@ for chrom in f1d:
 					if overlaps(f1, f2):
 						b1, e1 = f1
 						b2, e2 = f2
-						text = f'{chrom}:{b1}-{e1} {chrom}:{b2}-{e2}'
-						if text in seen: continue
-						print(text)
-						seen[text] = True
+						if (chrom, b1, e1, b2, e2) in seen: continue
+						print(f'{chrom}:{b1}-{e1} {chrom}:{b2}-{e2}')
+						seen[ (chrom, b1, e1, b2, e2) ] = True
