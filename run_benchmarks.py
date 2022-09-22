@@ -13,8 +13,23 @@ def bench(cmd):
 		t.append(elapsed(cmd))
 	return min(t)
 
-# generate random sequence
+# test1: generate random sequences
 
 
 t1 = bench('python3 ../algorithms/python/randomseq 1 100 > /dev/null')
 print(t1)
+
+
+# test2: compute kmer frequencies
+
+
+# test3: find longest ORF
+
+# test4: dust
+
+# test5: smithwaterman
+
+# test6: viterbi
+
+# test7: io
+
