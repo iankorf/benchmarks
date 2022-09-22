@@ -18,7 +18,7 @@ Run a suite of programs through different computers to see how fast they run.
 Language
 --------
 
-Implement the same algorithm in multiple computers.
+Implement the same algorithm in multiple languages.
 
 
 Algorithm
