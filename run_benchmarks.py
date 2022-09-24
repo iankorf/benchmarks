@@ -18,7 +18,7 @@ def bench(cmd, iterations):
 
 TEST = {}
 
-RUNS = 5
+RUNS = 8
 
 ####################################################
 # Test 1: Generate random sequences and count kmers
@@ -26,12 +26,12 @@ RUNS = 5
 
 # perl
 os.environ['PERL5LIB'] = '../algorithms/perl'
-rseq = '../algorithms/perl/randomseq 1000 1000'
+rseq = '../algorithms/perl/randomseq 1820 1024'
 kmer = '../algorithms/perl/kmerfreq -k 6 -'
 TEST['t1.pl'] = bench(f'{rseq} | {kmer} > /dev/null', RUNS)
 
 # python
-rseq = '../algorithms/python/randomseq 1000 1000'
+rseq = '../algorithms/python/randomseq 1024 1024'
 kmer = '../algorithms/python/kmerfreq -k 6 -'
 TEST['t1.py'] = bench(f'{rseq} | {kmer} > /dev/null', RUNS)
 
@@ -42,7 +42,7 @@ TEST['t1.py'] = bench(f'{rseq} | {kmer} > /dev/null', RUNS)
 #########################
 
 # make some test sequences
-seqs = '../algorithms/perl/randomseq 10 200'
+seqs = '../algorithms/perl/randomseq 10 209'
 subprocess.run(f'{seqs} > f1', shell=True)
 subprocess.run(f'{seqs} > f2', shell=True)
 
