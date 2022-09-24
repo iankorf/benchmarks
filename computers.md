@@ -24,7 +24,8 @@ Various machines around the house or lab.
 
 To be changed later
 
-|  Tag  | t1.pl | t1.py | t2.pl | Notes
-|:------|:------|:------|:------|:---------
-| Y710C | 0.714 | 1.491 | 1.213 | Lubuntu
-| Y710C | 0.445 | 0.784 | 0.724 | Cygwin
+|  Tag   | t1.pl | t1.py | t2.pl | Notes
+|:-------|:------|:------|:------|:---------
+| Y710C  | 0.714 | 1.491 | 1.213 | Lubuntu
+| Y710C  | 0.445 | 0.784 | 0.724 | Cygwin
+| LenIP3 | 0.319 | 0.452 | 0.552 | LinuxLite
