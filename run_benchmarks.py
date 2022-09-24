@@ -14,7 +14,7 @@ def bench(cmd, iterations):
 	t = []
 	for i in range(iterations):
 		t.append(elapsed(cmd))
-	return min(t)
+	return 1/min(t)
 
 TEST = {}
 
