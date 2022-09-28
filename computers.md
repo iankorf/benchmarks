@@ -31,4 +31,5 @@ Benchmarking various computers around the house or lab.
 | Y710C  | 0.8 | 0.7 | 0.8 | Lubuntu VM
 | Y710C  | 1.4 | 1.2 | 1.3 | Cygwin
 | LenIP3 |     |     |     | LinuxLite VM
-
+| Mini20 | 1.9 | 1.5 | 1.6 | Native
+| Mini20 | 2.3 | 2.2 | 2.0 | LinuxLite VM
