@@ -27,9 +27,9 @@ Benchmarking various computers around the house or lab.
 | Comp   | 1pl | 1py | 2pl | Notes
 |:-------|:---:|:---:|:---:|:---------
 | Light  | 3.7 | 4.3 | 3.7 | Ubuntu
-| Spit   | 1.0 | 1.0 | 1.0 | Spit
+| Spit   | 1.0 | 1.0 | 1.0 | Ubuntu
 | Y710C  | 0.8 | 0.7 | 0.8 | Lubuntu VM
 | Y710C  | 1.4 | 1.2 | 1.3 | Cygwin
-| LenIP3 |     |     |     | LinuxLite VM
-| Mini20 | 1.9 | 1.5 | 1.6 | Native
+| LenIP3 | 1.8 | 2.0 | 1.6 | LinuxLite VM
+| Mini20 | 1.9 | 1.5 | 1.6 | MacOS
 | Mini20 | 2.3 | 2.2 | 2.0 | LinuxLite VM
