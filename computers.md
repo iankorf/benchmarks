@@ -33,3 +33,4 @@ Benchmarking various computers around the house or lab.
 | LenIP3 | 1.8 | 2.0 | 1.6 | LinuxLite VM
 | Mini20 | 1.9 | 1.5 | 1.6 | MacOS
 | Mini20 | 2.3 | 2.2 | 2.0 | LinuxLite VM
+| MBA22  | 3.5 | 3.4 | 3.7 | MacOS
