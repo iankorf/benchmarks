@@ -38,7 +38,7 @@ git clone https://github.com/KorfLab/genomikon
 cd genomikon
 make
 cd ../benchmarks
-python3 benchmark.py
+python3 run_benchmarks.py
 ```
 
 
